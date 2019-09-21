@@ -1,0 +1,28 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21-sep-2018, 17:01:35
+    Author     : FranciscoAntonio
+*/
+
+header h1{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+
+.formato1{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    
+}
+.elemento{
+    display: inline-block;
+    width: 30%;
+}
+
+
