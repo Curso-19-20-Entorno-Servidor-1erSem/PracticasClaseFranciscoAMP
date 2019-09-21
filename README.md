@@ -1,2 +1,2 @@
-# PracticaClase
+# PracticasClase
 Practicas Realizadas en Clase.
