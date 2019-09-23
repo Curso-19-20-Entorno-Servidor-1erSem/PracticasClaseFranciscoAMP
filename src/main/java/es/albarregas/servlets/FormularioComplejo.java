@@ -6,6 +6,7 @@
 
 package es.albarregas.servlets;
 
+import java.util.Enumeration;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -39,7 +40,17 @@ public class FormularioComplejo extends HttpServlet {
             out.println("<title>Servlet FormularioComplejo</title>");  
             out.println("</head>");
             out.println("<body>");
+             Enumeration e = request.getParameterNames();
+                while(e.hasMoreElements()) {
+                                        String paramName=(String)e.nextElement();
+                                        String paramValue =request.getParameter(paramName);
+                                        if(paramValue.length()==0){
+                                                                out.println("Nombre: -");
+                                                                   }else{
+                                                                       out.println("Nombre: " + paramValue);
             
+                                                                            } 
+                                        }
             out.println("<h1>Servlet FormularioComplejo at " + request.getContextPath () + "</h1>");
             out.println("</body>");
             out.println("</html>");
