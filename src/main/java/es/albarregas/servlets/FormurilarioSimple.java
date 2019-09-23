@@ -40,6 +40,7 @@ public class FormurilarioSimple extends HttpServlet {
             out.println("<title>Servlet FormurilarioSimple</title>");            
             out.println("</head>");
             out.println("<body>");
+
             out.println("<h1>Servlet FormurilarioSimple at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
