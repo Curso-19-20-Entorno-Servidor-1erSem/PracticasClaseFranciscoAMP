@@ -9,22 +9,34 @@ and open the template in the editor.
         <title>Formulario Simple.</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/formularioCss.css">
+        <link rel="stylesheet" href="../CSS/formularioCss.css" type="text/css"/>
+
+        
     </head>
     <body>
-        <div>TODO write content</div>
-        <form id="form" name="form" method="post" action="../FormularioSimple">
-        <fieldset>
-            <legend>Datos Personales</legend>
-            <label for ="usuario">Usuario: </label>
-            <input type="text" id="usuario" placeholder="Usuario:">
-            <br>
-            <label for="correo">Email: </label>
-            <input type="email" id="correo" placeholder="Email: ">
-            <br>
-            <label for="chequo">Pulsa y cliquea. </label>
-            <input type="checkbox" name ="chequeo" value="h">
-            <br>
-            <input type="submit" name="Submit" id="button" value="Enviar Datos"/>
-        </fieldset>
+        
+        <form id="form" name="form" method="post" action="/Formulario">
+            <fieldset id="formulario">
+                <legend>Datos Personales</legend>
+                <br>
+                <br>
+                <label>Nombre </label>
+                <input type="text" id="nombre" size="30" maxlength="100" placeholder="Nombre: " />
+                <br>
+                <br>
+                <label>Correo Electr&oacute;nico: </label>
+                <input type="text" id="correo" size="30" maxlength="100" placeholder="Email: "/>
+                <br>
+                <br>
+                <label for="chequeo">Pulsa y cliquea. </label>
+                <input type="checkbox" id ="chequeo">
+                <br>
+                <br>
+                <input type="submit" name="Submit" id="button" value="Enviar Datos"/>
+                <br>
+                <br>
+            </fieldset>
+        </form>
     </body>
 </html>

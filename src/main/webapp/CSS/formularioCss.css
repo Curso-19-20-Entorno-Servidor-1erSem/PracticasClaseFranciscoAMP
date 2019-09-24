@@ -1,0 +1,28 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05-oct-2018, 17:06:41
+    Author     : FranciscoAntonio
+*/
+
+
+[id="formulario"]
+{
+   font-family: 'PT Sans', sans-serif;
+   font-size: 16px;
+   padding:2px;
+   cursor:pointer;
+   display:block;
+   width:290px;
+   margin: 0 auto;
+   text-align:center;
+}
+#Titulo{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    border-bottom: solid blue;
+}
