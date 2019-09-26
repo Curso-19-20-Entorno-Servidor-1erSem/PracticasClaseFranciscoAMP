@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+
 -->
 <html>
     <head>
         <title>Formulario Complejo.</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/formularioCss.css" type="text/css"/>
     </head>
     <body>
         <div>Formulario Complejo.</div>
-        <form id="form" name="form" method="post" action="../formularioSimple"> <!-- comprobar ruta de la llamada -->
-        <fieldset>
-            <legend>Datos Personales</legend>
+        <form id="form" name="form" method="post" action="/complejo"> <!-- comprobar ruta de la llamada -->
+        <fieldset id="formulario"><!-- Primer Fieldset: Datos Personales. -->
+            <legend> Datos Personales </legend>
             <label for ="usuario">Usuario: </label>
             <input type="text" id="usuario" placeholder="Usuario:">
             <br>
             <label for="password">Password: </label>
-            <input type="text" id="password" placeholder="Introduce contraseña:">
+            <input type="password" id="password" placeholder="Introduce contraseña:">
             <br>
             <label for="edad">Edad: </label>
             <input type="number" id="edad" min ="22" max="60">
             <br>
         </fieldset>
-        <fieldset>
-            <legend>Otros datos: </legend>
+        <fieldset id="formulario"><!-- Segundo Fieldset: Otros Datos. -->
+            <legend> Otros datos </legend>
                 <label for="Soltero">Soltero/a</label>
                 <input type="radio" name ="estado" value="s" checked>
                 <label for="Casado">Casado/a </label>
@@ -35,23 +34,46 @@ and open the template in the editor.
                 <input type="radio" name ="estado" value="v">
                 <label for="Divorciado">Divorciado/a </label>
                 <input type="radio" name ="estado" value="s">
-                 <br>
-            <label for="aficiones">Aficiones: (uno o varios, CTRL)</label>
-                <select id="Aficiones" name="Aficiones" multiple="multiple" size="6">
-                    <option value="Deportes">Deportes</option>
-                    <option value="Música">Música</option>
-                    <option value="Informática">Informática</option>
-                    <option value="Viajes">Viajes</option>
-                    <option value="Tiendas">Tiendas</option>
-                    <option value="Juegos">Juegos</option>
-                </select>
-            <label> for="Comentarios: "</label>
+                <br>
+                <label for="Aficiones"></label>
+                <p>Aficiones: (uno o varios, CTRL</p>
+                    <select id="Aficiones" name="Aficiones" multiple="multiple" size="6">
+                        <option value="Deportes">Deportes</option>
+                        <option value="Música">Música</option>
+                        <option value="Informática">Informática</option>
+                        <option value="Viajes">Viajes</option>
+                        <option value="Tiendas">Tiendas</option>
+                        <option value="Juegos">Juegos</option>
+                    </select>
+                <label for="Comentarios"></label>
+                <p>Comentarios: </p>
+                <textarea rows="4" cols="50" placeholder="Describe yourself here..."></textarea>
             
         </fieldset>
-            <fieldset><!--Tercer Fieldset: Medios Tecnológicos-->
+            <fieldset id="formulario"><!--Tercer Fieldset: Medios Tecnológicos-->
+                <legend> Medios Tecnol&oacutegicos </legend>
+                <p>¿Dispones de Internet? </p>
+                <label for="Si">S&iacute;</label>
+                <input type="radio" name ="internet" value="s" checked>
+                <label for="No">No</label>
+                <input type="radio" name ="estado" value="n">
                 
-            </fieldset><!--Fin Fieldset-->    
+                
+                <label for="so"></label>
+                <p>Sistema Operativo: (Por favor, elige uno.)</p>
+                    <select id="Aficiones" name="so" multiple="multiple" size="6">
+                        <option value="windows7">Windows 7.</option>
+                        <option value="windows10">Windows 10.</option>
+                        <option value="ubuntu">Ubuntu.</option>
+                        <option value="ios">IOS.</option>
+                        <option value="android">Android.</option>
+                        <option value="debian">Debian.</option>
+                    </select>
+            </fieldset><!--Fin Fieldset-->  
+            
+            
         <input type="submit" name="Submit" id="button" value="Enviar Datos">
+        <input type="reset" name="reset" id="button" value="Limpiar Datos">
         </form>
     </body>
 </html>

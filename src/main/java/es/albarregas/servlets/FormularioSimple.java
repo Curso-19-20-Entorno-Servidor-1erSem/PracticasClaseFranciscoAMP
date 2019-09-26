@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author FranciscoAntonio
  */
-public class Formulario extends HttpServlet {
+public class FormularioSimple extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -35,10 +35,21 @@ public class Formulario extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet Formulario</title>");            
+            out.println("<title>Servlet FormularioSimple</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet Formulario at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet FormularioSimple at " + request.getContextPath() + "</h1>");
+            out.println("Nombre:");
+                String nom=request.getParameter("nombre");
+                out.println(nom);
+                out.println("<br>");
+                out.println("Correo Elecgtr&oacutenico:");         
+                String email=request.getParameter("correo");
+                out.println(email);
+                out.println("<br>");
+                out.println("<br>");
+                out.println("<br>");
+                out.println("<a href='index.html'>Men&uacute;</a>");
             out.println("</body>");
             out.println("</html>");
         }
