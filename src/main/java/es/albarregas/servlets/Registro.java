@@ -84,8 +84,20 @@ public class Registro extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
-    }
+                try (PrintWriter out = response.getWriter()) {
+                 out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet Registro</title>");            
+            out.println("</head>");
+            out.println("<body>");
+            out.println("");
+            out.println("<p align=\"center\"><a href=\"index.html\">Menú Principal</a></p>");
 
+            out.println("</body>");
+            out.println("</html>");
+    }
+    }
     /**
      * Handles the HTTP <code>POST</code> method.
      *
@@ -111,3 +123,7 @@ public class Registro extends HttpServlet {
     }// </editor-fold>
 
 }
+/*
+private boolean fechaCorrecta(String d, String m, String a){
+
+}*/

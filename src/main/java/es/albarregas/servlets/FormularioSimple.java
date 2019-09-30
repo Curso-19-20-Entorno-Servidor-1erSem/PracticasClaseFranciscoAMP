@@ -40,12 +40,12 @@ public class FormularioSimple extends HttpServlet {
             out.println("<body>");
             out.println("<h1>Servlet FormularioSimple at " + request.getContextPath() + "</h1>");
             out.println("Nombre:");
-                String nom=request.getParameter("nombre");
-                out.println(nom);
+                String nombre=request.getParameter("nombre");
+                out.println(nombre);
                 out.println("<br>");
-                out.println("Correo Elecgtr&oacutenico:");         
-                String email=request.getParameter("correo");
-                out.println(email);
+                out.println("Correo Electr&oacutenico:");         
+                String correo=request.getParameter("correo");
+                out.println(correo);
                 out.println("<br>");
                 out.println("<br>");
                 out.println("<br>");

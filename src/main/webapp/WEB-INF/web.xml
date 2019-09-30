@@ -12,6 +12,10 @@
         <servlet-name>Registro</servlet-name>
         <servlet-class>es.albarregas.servlets.Registro</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Ciclodevida</servlet-name>
+        <servlet-class>es.albarregas.servlets.Ciclodevida</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HolaMundoServlet</servlet-name>
         <url-pattern>/hola</url-pattern>
@@ -23,6 +27,10 @@
     <servlet-mapping>
         <servlet-name>Registro</servlet-name>
         <url-pattern>/Registro</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Ciclodevida</servlet-name>
+        <url-pattern>/Ciclodevida</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
