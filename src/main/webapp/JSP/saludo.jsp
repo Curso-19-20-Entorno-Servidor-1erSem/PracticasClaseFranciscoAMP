@@ -11,8 +11,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-   <!--    <link rel="stylesheet" type="text/css" href="../CSS/normalizer.css">
-        <link rel="stylesheet" type="text/css" href="../CSS/estilos.css"> -->
+   <!-- <link rel="stylesheet" type="text/css" href="../CSS/normalizer.css"> -->
+        <link rel="stylesheet" type="text/css" href="../CSS/saludoCss.css">
         
         <title>JSP Saludo</title>
     </head>
@@ -21,9 +21,9 @@
             LocalTime horaActual = LocalTime.now();
             String nombre = request.getParameter("nombre");
             
-            String am = "os días";
-            String pm = "as tardes";
-            String noche = "as noches";
+            String bDias = "os días";
+            String bTardes = "as tardes";
+            String bNoches = "as noches";
             String saludo = "Buen";
             
             String sexo = request.getParameter("sexo");
@@ -32,11 +32,11 @@
             String hombreOmujer;
             
             if (horaActual.getHour() > 5 && horaActual.getHour() < 12) {
-                saludo += am;
+                saludo += bDias;
             } else if (horaActual.getHour() < 20) {
-                saludo += pm;
+                saludo += bTardes;
             } else {
-                saludo += noche;
+                saludo += bNoches;
             }
             
             if(sexo.equals("Hombre")){
@@ -46,7 +46,7 @@
             }
         %>
         
-        <h1><%= saludo %> <%= hombreOmujer %> <%= nombre %></h1>
+        <h1><%= saludo %>, <%= hombreOmujer %> <%= nombre %>.</h1>
         <a href="<%=request.getContextPath()%>/index.html">Menú</a>
     </body>
 </html>
