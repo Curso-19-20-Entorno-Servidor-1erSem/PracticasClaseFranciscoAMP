@@ -25,3 +25,21 @@ https://docs.oracle.com/javase/8/docs/api/java/time/Period.html
 Si la fecha es posterior a la fecha actual, deberá indicar que la persona no ha nacido. Para ello utilizamos isBefore
 
 <p align="center">Hola nombre tienes x años, meses y dias.</p>
+
+<h3>02-10-2019 19:19 Tarea calculadoraBasica.jsp</h3>
+hacer una calculardora basica, con las 4 operaciones básicas: suma, resta, multiplicar y division.
+<p align="center">priemer operando    seguindo operando</p>
+
+Radio button:
+<p align="center">sumar  restar  mulñtiplicar dividir checkbox</p>
+
+button
+<p align="center">enbuiar limpiar menu inicial</p>
+
+<p align="center"fecha</p>
+<p align="center"el resultado y la operacion </p>
+<p align="center"vulve a mostar la calculadora.</p>
+
+al dividir por cero debe aparecder:"Se está intentando dividir por cero.".
+
+menu principal e type button
