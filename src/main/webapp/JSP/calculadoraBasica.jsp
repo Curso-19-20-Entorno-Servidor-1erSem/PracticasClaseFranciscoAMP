@@ -96,9 +96,9 @@
                 <strong><%=mensajeOperacion%></strong>
                 <br>
                 <br>
-                <button type="submit" name="enviar" value="enviar">Enviar</button>
-                <button type="reset" name="Limpiar" value="Limpiar">Limpiar</button>
-                <button type="submit" name="botonCookie" value="Menu"><a id="menuCookies" href="<%=request.getContextPath()%>/index.html">Menú</a> </button>
+                <button type="submit" name="enviar" value="enviar"> Enviar </button>
+                <button type="reset" name="Limpiar" value="Limpiar"> Limpiar </button>
+                <button type="submit" name="botonCookie" value="Menu"><a id="menuCookies" href="<%=request.getContextPath()%>/index.html"> Menú </a> </button>
             </fieldset>
         </form>
     </body>
