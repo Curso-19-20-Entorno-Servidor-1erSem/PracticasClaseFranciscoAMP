@@ -44,3 +44,18 @@ button
 al dividir por cero debe aparecder:"Se está intentando dividir por cero.".
 
 menu principal e type button
+
+<h3>07-10-2019 17:50 Tarea cookiesContadorDeVisitas.jsp</h3>
+Contador de visitas con cookies:
+<ul>
+  <li>Has visitado la p&acutegina x veces</li>
+  <li>Informacion de la cookie</li>
+  <li>Caducudad en 1 hora</li>
+  <li>nombre</li>
+  <li>segura</li>
+  <li>version</li>
+</ul>
+Botones:
+recargar eleminar menu
+
+Estp es cuando se saca la primera vez,. a partir de la segunda vez que se recarga, solo aparece "Has visto la paguian x+1 veces".
