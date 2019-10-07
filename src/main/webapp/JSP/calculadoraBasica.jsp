@@ -72,13 +72,22 @@
                                     + Integer.parseInt(request.getParameter("num2")) + " = "
                                     + (Integer.parseInt(request.getParameter("num1")) * Integer.parseInt(request.getParameter("num2")));
                         } else if (request.getParameter("operacion").equals("Dividir")) {
-                            if (Integer.parseInt(request.getParameter("num2")) != 0) {
+/**
+ * se introduce el valor 0.0 para que pueda al dividir por 0 salga el mensaje de texto:
+ * "Se está intentando dividir por 0."
+ */
+                            if (Integer.parseInt(request.getParameter("num2")) != 0.0) {
                                 mensajeOperacion = "El resultado de "
                                         + Integer.parseInt(request.getParameter("num1")) + " / "
                                         + Integer.parseInt(request.getParameter("num2")) + " = "
-                                        + (Integer.parseInt(request.getParameter("num1")) / Integer.parseInt(request.getParameter("num2")));
+/**
+ * Para conseguir que el resultado de la división tenga decimales tenemos 2 opciones, la primera es cambiar el tipo de los números
+ * a float o a double pero puede que no queramos o podamos hacerlo, en ese caso la solución que tenemos es hacer un cast de al menos
+ * uno de los dos números y así al hacer una operación con double o un float y un int la operación se realizará con decimales.
+ */
+                                        + (double)(Integer.parseInt(request.getParameter("num1")) /(double)Integer.parseInt(request.getParameter("num2")));
                             } else {
-                                mensajeOperacion = "No se puede dividir entre 0";
+                                mensajeOperacion = "Se está intentando dividir por 0.";
                             }
                         }
                     }
@@ -87,6 +96,7 @@
                 <strong><%=mensajeOperacion%></strong>
                 <br>
                 <br>
+                <button type="submit" name="enviar" value="enviar">Enviar</button>
                 <button type="reset" name="Limpiar" value="Limpiar">Limpiar</button>
                 <button type="submit" name="botonCookie" value="Menu"><a id="menuCookies" href="<%=request.getContextPath()%>/index.html">Menú</a> </button>
             </fieldset>
