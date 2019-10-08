@@ -58,4 +58,4 @@ Contador de visitas con cookies:
 Botones:
 recargar eleminar menu
 
-Estp es cuando se saca la primera vez,. a partir de la segunda vez que se recarga, solo aparece "Has visto la paguian x+1 veces".
+Esto es cuando se saca la primera vez, a partir de la segunda vez que se recarga, solo aparece "Has visto la paguian x+1 veces".
