@@ -18,7 +18,7 @@
             <h1>CONTROL DE COOKIES</h1>
             <form action="cookies.jsp" method="post">
 
-                <fieldset>
+                <fieldset id="cabecera">
                     <label>Nombre de la cookie:</label><input  name="nombre" type="text" required><br>
                     <label>Valor de la cookie:</label><input  name="valor" type="text"><br>
                     <br>
@@ -31,13 +31,13 @@
                     <br>
                     <br>
                     <%
-                        //String mensaje = (request.getParameter("mensaje") != null)?request.getParameter("mensaje"):"";
-                        String mensaje;
+                      String mensaje = (request.getParameter("mensaje") != null)?request.getParameter("mensaje"):"";
+/*                        String mensaje;
                         if (request.getParameter("mensaje") != null) {
                             mensaje = request.getParameter("mensaje");
                         } else {
                             mensaje = "";
-                        }
+                        }*/
                     %>
                     <p><%=mensaje%></p>
 

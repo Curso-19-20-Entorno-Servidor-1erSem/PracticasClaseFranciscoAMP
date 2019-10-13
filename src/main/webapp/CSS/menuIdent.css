@@ -4,11 +4,11 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : 11-oct-2019, 1:08:12
+    Created on : 14-oct-2019, 1:36:56
     Author     : Francisco_Antonio
 */
 
-[id="cabecera"]
+[id="menu"]
 {
    font-family: 'PT Sans', sans-serif;
    font-size: 16px;
@@ -19,7 +19,7 @@ and open the template in the editor.
    width:290px;
    margin: 0 auto;
    text-align:center;
-   border-color: burlywood;
+   border-color: darkkhaki;
 }
 h1{
     font-family: 'PT Sans', sans-serif;
