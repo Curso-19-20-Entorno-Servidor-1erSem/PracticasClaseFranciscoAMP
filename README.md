@@ -6,5 +6,8 @@ Se crean archivos:
 - indexCss.css ->Estilo auxiliar.
 
 Antigua portada:
+![Antigua portada:](https://github.com/fmurillopacheco/PracticasClaseNew/blob/master/src/main/webapp/IMG/indexAntiguo.png)
+
 
 Nueva Portada:
+![Nueva Portada:](https://github.com/fmurillopacheco/PracticasClaseNew/blob/master/src/main/webapp/IMG/indexNiuevo.png)
