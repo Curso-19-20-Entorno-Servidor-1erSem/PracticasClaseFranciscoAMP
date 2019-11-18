@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Formulario Complejo Map.</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Formulario Complejo Map.</div>
+        <form id='form' name='form' method="POST" action="../formularioComplejo">
+    <fieldset id="datospersonales">
+        <legend>Datos personales</legend>
+            <label for='nombre'>Usuario: </label>
+            <input type="text" name="usuario" id='usuario'>
+            <br>
+            <label for='password'>Password: </label>
+            <input type="text" name="password" id='password'>
+            <br>
+            <label for='edad'>Edad </label>
+           
+            <select name="edad" form="edad">
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="22">24</option>
+                    <option value="23">25</option>
+            </select>
+                    
+            
+    </fieldset>
+            <fieldset id="otrosdatos">
+        <legend>Otros Datos</legend>
+        
+                <label for='civil'>Estado civil: </label>
+                <br>
+                <input type="radio" name="estado" value="soltero" checked="">
+                <label for='mujer'>Soltero </label>
+                <input type="radio" name="estado" value="casado">
+                <label for='mujer'>Casado </label>
+                <input type="radio" name="estado" value="viudo" >
+                <label for='mujer'>Viudo </label>
+                <input type="radio" name="estado" value="divorciado">
+                <label for='mujer'>Divorciado </label>
+                <br>
+                <br>
+                <label for="aficiones">Aficiones (uno, varios, CTRL)</label> 
+                
+                <br>
+                <select multiple name="aficiones" form="form">
+                    <option value="Deporte">Deporte</option>
+                    <option value="Musica">Musica</option>
+                    <option value="Informatica">Informática</option>
+                    <option value="Viajes">Viajes</option>
+                    <option value="Tienda">Tienda</option>
+                    <option value="Juegos">Juegos</option>
+                   
+            </select>
+                <br>
+                <label for="comentario">Comentarios:</label>
+                <br>
+                <textarea name="comentario" form="form">Pon tu comentario</textarea>
+            </fieldset>
+           
+            <fieldset id="medios">
+        <legend>Medios tecnológicos</legend>
+           
+                    <label for='hombre'>Dispones de internet?: </label>
+                    <br>
+                <input type="radio" name="internet" value="si" checked="">
+                <label for='si'>Si </label>
+                <input type="radio" name="internet" value="no" >
+                <label for='no'>No </label>
+                <br>
+                <br>
+                <label for='edad'>Sistema operativo (elige uno) </label>
+                <br>
+                <select multiple name="sistema" form="form">
+                    <option value="Linux">Linux</option>
+                    <option value="Windows">Windows</option>
+                    <option value="Macintosh">Macintosh</option>
+                    <option value="Solaris">Solaris</option>
+                    
+                   
+            </select>
+                
+                
+            
+    </fieldset>
+            <br>
+            <button type="submit" id="boton">Enviar</button>
+            
+            
+        </form>
+    </body>
+</html>

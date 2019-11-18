@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+@author Francisco Antonio Murillo Pacheco
+-->
+<html>
+    <head>
+        <title>Entrada de datos Saludo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/formularioCss.css">
+    </head>
+    <body>
+        <form action="../JSP/saludo.jsp" method="post">
+            
+            <fieldset id="formulario">
+                
+                <legend>Saludo</legend>
+                <label>Nombre: </label><input name="nombre" type="text"><br>
+                <label class="radio-inline"><input type="radio" name="sexo" value="Hombre" >Hombre</label>
+                <label class="radio-inline"><input type="radio" name="sexo" value="Mujer" checked="checked">Mujer</label><br>
+                <button type="submit" name="enviar" value="Enviar">Enviar</button>
+            </fieldset>
+
+        </form>
+    </body>
+</html>

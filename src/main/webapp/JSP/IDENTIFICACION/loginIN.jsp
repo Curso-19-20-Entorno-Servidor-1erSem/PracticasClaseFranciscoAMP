@@ -1,0 +1,21 @@
+<%-- 
+    Document   : loginIN
+    Created on : 13 oct. 2019, 21:07:47
+    Author     : franciscoantonio
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page session="true" %>
+<%
+    String usuario = request.getParameter("usuario");
+    String contrasenia = request.getParameter("contrasenia");
+    HttpSession sesion = request.getSession();
+    if (usuario.equals("paco") && contrasenia.equals("1234")) {
+        HttpSession sesionOK=request.getSession();
+        sesionOK.setAttribute("usuario",request.getParameter("usuario"));
+        response.sendRedirect("menu.jsp");
+    } else { //si no son correctos los valores, muestra un mensaje de error
+        sesion.setAttribute("error", "Usuario y/o contraseña incorrectos.Vuelve a intentarlo.");
+        response.sendRedirect("login.jsp");
+    }
+%>
