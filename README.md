@@ -1,14 +1,14 @@
 # PracticasClase
-Practicas Realizadas en Clase.
+## Practicas Realizadas en Clase.
 
 
-<h3>30-09-2019 Tarea Saludo.jsp</h3>
+### 30-09-2019 Tarea Saludo.jsp
 
 Tarea <strong>saludo.jsp</strong> en la que se pide que mediante un pequeño formuilario en la que se pide el nombre y el sexo, devuelva el texto:
 
 <p align="center">Buenos Dias, tardes o noches, dependiendo de la hora; el nombre y la hora actual.</p>
 
-<h3>02-10-2019 Tarea edadPersona.jsp</h3>
+### 02-10-2019 Tarea edadPersona.jsp
 
 Intrducimos el nombre y la fecha de nacimiento. Comprobar cuantos años tiene una persona.
 
@@ -27,7 +27,7 @@ Si la fecha es posterior a la fecha actual, deberá indicar que la persona no ha
 
 <p align="center">Hola nombre tienes x años, meses y dias.</p>
 
-<h3>02-10-2019 19:19 Tarea calculadoraBasica.jsp</h3>
+### 02-10-2019 19:19 Tarea calculadoraBasica.jsp
 hacer una calculardora basica, con las 4 operaciones básicas con numeros reales: suma, resta, multiplicar y division.
 <p align="center">priemer operando    seguindo operando</p>
 
@@ -67,4 +67,26 @@ Se realiza un proceso de identificación, es decir, un login para acceso a una w
 
 En priemr ligar se muestra una entrada de datos al sitio. hay que tener en cuenta la validadción del usuario , indicando <strong>"Usuario no identificado"</strong> si no se pone ningún  usuarioEn ella se introducen las credenciales de acceso al sitio. Al entar se debe de mostrar  
 
+### 18-11-2019 Nueva tarea: Menu de operaciones con la libreria de JSTL.
+
+Se añaden dependencias JSTL 1.2
+
+Consta de:
+- Se crea carpeta JSTL dentro de la cual se crea otra llamada Core.
+- Dentro de esa carpeta se crean los siguientes archivos:
+	- Jstl.jsp --> Archivo que contiene varias deficiones sin completar.
+	- lenguajeDeExpresiones.jsp --> Archivo que saca ejemplos del Lenguaje de Expresiones.
+	- ejemplos.jsp --> Contine varias expresione. No funciona da error 500.
+- Se añade a la carpeta CSS el archivo indexCss.css en el que se establecen los nuevos estilos de la página.
+- Dentro de la carpeta Source Packages creamos el controlador, que vamos a necesitar. Este paquete es:
+	- es.albarregas.beans, dentro se crean la clase Lista.java
+	- Tambien se crea el controlador es.albarregas.model con la clase Dias.java para furturas necesidades. 
+
+Se modifica:
+- index.html --> Se añade "Menu de operaciones con la libreria de JSTL"con los enlaces a los distintos archivos.
+- index.html --> Se modifica archivo con el nuevo aspecto del menú realizado con bootstrap 4.0 para mejor optimiazacion de la página.
+
+
+18-11-2019 04:45
+by Francisco Antonio Murillo Pacheco
 ...
