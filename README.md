@@ -62,3 +62,9 @@ Esto es cuando se saca la primera vez, a partir de la segunda vez que se recarga
 
 <h3>08-10-2019 Tarea Control de cookies.</h3>
 
+<h3>14-10-2019 Proceso de Identificación .</h3>
+Se realiza un proceso de identificación, es decir, un login para acceso a una web.
+
+En priemr ligar se muestra una entrada de datos al sitio. hay que tener en cuenta la validadción del usuario , indicando <strong>"Usuario no identificado"</strong> si no se pone ningún  usuarioEn ella se introducen las credenciales de acceso al sitio. Al entar se debe de mostrar  
+
+...

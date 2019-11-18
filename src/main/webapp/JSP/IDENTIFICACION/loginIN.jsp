@@ -10,9 +10,9 @@
     String usuario = request.getParameter("usuario");
     String contrasenia = request.getParameter("contrasenia");
     HttpSession sesion = request.getSession();
-    if (usuario.equals("paco") && contrasenia.equals("1234")) {
-        HttpSession sesionOK=request.getSession();
-        sesionOK.setAttribute("usuario",request.getParameter("usuario"));
+    if (usuario.equals("paco") && contrasenia.equals("1234")) { //estos deben ser los valores de los atributos
+        //si son esos los introducidos, nos vamos al menú del user
+        sesion.setAttribute("usuario", usuario);
         response.sendRedirect("menu.jsp");
     } else { //si no son correctos los valores, muestra un mensaje de error
         sesion.setAttribute("error", "Usuario y/o contraseña incorrectos.Vuelve a intentarlo.");
